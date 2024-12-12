@@ -16,7 +16,7 @@ const Application = () => {
 
       {/* Pamphlet Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:w-1/2">
-        {pamphlets.map((pamphlet: PamphletType, index) => (
+        {pamphlets.map((pamphlet, index) => (
           <div
             key={index}
             className="bg-white shadow-lg p-6 rounded-lg flex flex-col items-center text-center border hover:shadow-xl"
