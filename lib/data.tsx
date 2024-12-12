@@ -1,4 +1,4 @@
-export const links: LinkType = [
+export const links= [
   {
     name: "About Us",
     href: "about",
