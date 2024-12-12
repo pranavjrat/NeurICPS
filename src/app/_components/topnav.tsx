@@ -9,7 +9,7 @@ import clsx from 'clsx';
 
 const TopNav = () => {
   const pathname = usePathname();
-  const [hoveredLink, setHoveredLink] = useState(null); // Track which link is hovered
+  const [hoveredLink, setHoveredLink] = useState<string | null>(null); // Specify type explicitly
 
   return (
     <nav className="bg-white shadow">
@@ -62,7 +62,10 @@ const TopNav = () => {
                     <ul className="py-4 px-4 text-sm text-gray-700 dark:text-gray-200"> {/* Increased padding */}
                       {link.subLinks.map((subLink, index) => (
                         <li key={index}>
-                          <Link href={subLink.href} className="block py-3 px-6 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                          <Link
+                            href={subLink.href}
+                            className="block py-3 px-6 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          >
                             {subLink.name}
                           </Link>
                         </li>
