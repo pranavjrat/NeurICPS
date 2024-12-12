@@ -12,7 +12,7 @@ const TopNav = () => {
   const [hoveredLink, setHoveredLink] = useState<string | null>(null); // Specify type explicitly
 
   return (
-    <nav className="bg-white shadow">
+    <nav className="bg-white shadow fixed w-full top-0 left-0 z-50">
       <div className="mx-auto grid max-w-screen-lg grid-cols-3 items-center p-4">
         {/* Logo on the left */}
         <div className="flex justify-start p-0 m-0">

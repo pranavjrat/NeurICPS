@@ -5,7 +5,7 @@ import { pamphlets } from 'lib/data';
 
 const Application = () => {
     return (
-    <div className="flex flex-col md:flex-row gap-8">
+    <div className="mx-11 flex flex-col md:flex-row gap-8">
       {/* Text Section */}
       <div className="md:w-1/2 flex flex-col justify-center">
         <SectionHeading>Application Verticals</SectionHeading>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="mx-32 my-32 scroll-mt-28 mb-28 text-xl">
+    <section className="mx-11 my-32 scroll-mt-28 mb-28 text-xl">
       {/* Section Heading */}
 
 
