@@ -1,9 +1,3 @@
-export type PamphletType = {
-  title: string;
-  description: string;
-  image: string;
-}
-
 export const links = [
   {
     name: "About Us",
@@ -44,7 +38,7 @@ export const links = [
   },
 ] as const;
 
-export const pamphlets: PamphletType = [
+export const pamphlets = [
   {
     title: 'Agriculture',
     description: 'Innovative solutions for modern farming.',
