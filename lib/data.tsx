@@ -1,4 +1,10 @@
-export const links= [
+export type PamphletType = {
+  title: string;
+  description: string;
+  image: string;
+}
+
+export const links = [
   {
     name: "About Us",
     href: "about",
@@ -37,4 +43,39 @@ export const links= [
     ]
   },
 ] as const;
+
+export const pamphlets: PamphletType = [
+  {
+    title: 'Agriculture',
+    description: 'Innovative solutions for modern farming.',
+    image: '/images/agriculture.png'
+  },
+  {
+    title: 'Smart Education',
+    description: 'Technology for smarter learning.',
+    image: '/images/agriculture.png'
+  },
+  {
+    title: 'Security',
+    description: 'Advanced tools for enhanced safety.',
+    image: '/images/agriculture.png'
+  },
+  {
+    title: 'Healthcare',
+    description: 'Improving lives with better health solutions.',
+    image: '/images/agriculture.png'
+  },
+  {
+    title: 'IIoT',
+    description: 'Connecting industries with smart devices.',
+    image: '/images/agriculture.png'
+  },
+  {
+    title: 'Industrial',
+    description: 'With robotics and artificial intelligence taking precedence in industrial infrastructure, IoT comes to the forefront of the next industrial revolution.',
+    image: '/images/agriculture.png'
+  },
+  ,
+] as const;
+
 
