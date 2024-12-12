@@ -1,7 +1,6 @@
 'use client';
 import React from "react";
 import Image from "next/image";
-import SectionHeading from "./section-heading";
 
 export default function About() {
   return (
