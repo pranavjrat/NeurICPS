@@ -18,7 +18,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body className="m-0 p-0">
+      <body className="m-0 p-0 bg-gray-50">
         <TopNav />
         <TRPCReactProvider>{children}</TRPCReactProvider>
         <Footer />
