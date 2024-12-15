@@ -11,7 +11,7 @@ const Intro = () => {
 
         <div className="flex justify-start items-start h-[30vh]">
           <div className="p-16 mt-56 ms-1/3 text-left mr-16">
-            <h1 className="text-5xl font-bold text-black">
+          <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-600 via-grey-800 to-gray-900">
               Neuromorphic Interdisciplinary Cyber Physical Centre
             </h1>
             <h2

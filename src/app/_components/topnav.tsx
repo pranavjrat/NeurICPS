@@ -13,7 +13,7 @@ const TopNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage hamburger menu
 
   return (
-    <nav className="navbar fixed left-0 top-0 z-50 w-full bg-white shadow">
+    <nav className="navbar fixed left-0 top-0 z-50 w-full bg-white opacity-90 shadow">
       <div className="mx-auto grid max-w-screen-lg grid-cols-3 items-center p-4">
         {/* Hamburger Menu (Visible only on small screens) */}
         <div className="flex justify-start md:hidden">
@@ -73,19 +73,19 @@ const TopNav = () => {
                 {link.subLinks && (
                   <div
                     className={clsx(
-                      "absolute left-0 top-full z-10 mt-2 w-64 rounded-lg bg-white shadow-md",
+                      "absolute left-0 top-full z-10 mt-2 w-64 rounded-lg bg-white shadow-md transition-all duration-200",
                       {
-                        block: hoveredLink === link.href,
-                        hidden: hoveredLink !== link.href,
+                        "visible opacity-100": hoveredLink === link.href, // Dropdown visible when hoveredLink matches
+                        "invisible opacity-0": hoveredLink !== link.href, // Dropdown hidden when not hovered
                       },
                     )}
                   >
-                    <ul className="justify-center px-4 py-4 text-sm text-gray-700 dark:text-gray-200">
+                    <ul className="overflow-hidden px-4 py-4 text-sm text-gray-700 dark:text-gray-100">
                       {link.subLinks.map((subLink, index) => (
                         <li key={index}>
                           <Link
                             href={subLink.href}
-                            className="block px-6 py-3 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                            className="block px-6 py-3 text-gray-700 hover:bg-gray-100 dark:hover:bg-blue-600 dark:hover:text-white"
                           >
                             {subLink.name}
                           </Link>
@@ -98,8 +98,7 @@ const TopNav = () => {
             );
           })}
         </ul>
-        {/* Empty placeholder to align logo and links */}
-        <div className="justify-end flex p-0 m-0 navbar-logo">
+        <div className="m-0 flex justify-end p-0">
           <Link href="https://www.juit.ac.in/">
             <Image
               src="/juit.png" // Replace with your logo path

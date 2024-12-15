@@ -230,14 +230,29 @@ transitions
 }
 
 .navbar {
-  height: 80px; /* Set a fixed height */
-  display: flex;
-  align-items: center; /* Center items vertically */
-}
-
-.navbar {
   display: flex;
   align-items: center; /* Center items vertically */
   height: 100px; /* Fixed height */
   padding: 0 20px; /* Add horizontal padding */
 }
+
+/* Tailwind CSS classes for proper overflow handling */
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 16rem; /* You can adjust the width as needed */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  z-index: 50; /* Ensure dropdown is above other elements */
+  opacity: 0; /* Start with hidden dropdown */
+  visibility: hidden; /* Ensure it's hidden initially */
+  transition: opacity 0.2s ease, visibility 0.2s ease; /* Add transition for smooth effect */
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible; /* Make dropdown visible when the hover state is active */
+}
+
