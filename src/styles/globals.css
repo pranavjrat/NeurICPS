@@ -228,3 +228,16 @@ transitions
 .t:hover, :checked + .t {
   transition:transform 0.5s, bottom 0.6s, left 0.6s, width 0.3s, box-shadow 0s;
 }
+
+.navbar {
+  height: 80px; /* Set a fixed height */
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.navbar {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  height: 100px; /* Fixed height */
+  padding: 0 20px; /* Add horizontal padding */
+}

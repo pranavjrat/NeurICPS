@@ -13,7 +13,7 @@ const TopNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage hamburger menu
 
   return (
-    <nav className="fixed left-0 top-0 z-50 w-full bg-white shadow">
+    <nav className="navbar fixed left-0 top-0 z-50 w-full bg-white shadow">
       <div className="mx-auto grid max-w-screen-lg grid-cols-3 items-center p-4">
         {/* Hamburger Menu (Visible only on small screens) */}
         <div className="flex justify-start md:hidden">
@@ -99,13 +99,13 @@ const TopNav = () => {
           })}
         </ul>
         {/* Empty placeholder to align logo and links */}
-        <div className="justify-end flex p-0 m-0">
+        <div className="justify-end flex p-0 m-0 navbar-logo">
           <Link href="https://www.juit.ac.in/">
             <Image
               src="/juit.png" // Replace with your logo path
               alt="JUIT Logo"
-              width={112} // Increased size
-              height={112} // Increased size
+              width={224} // Increased size
+              height={224} // Increased size
               className="object-contain"
             />
           </Link>
