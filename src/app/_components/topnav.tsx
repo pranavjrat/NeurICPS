@@ -37,9 +37,8 @@ const TopNav = () => {
             </svg>
           </button>
         </div>
-
         {/* Logo on the center */}
-        <div className="m-0 flex justify-left p-0">
+        <div className="justify-left m-0 flex p-0">
           <Link href="/">
             <Image
               src="/nicps.jpg" // Replace with your logo path
@@ -50,7 +49,6 @@ const TopNav = () => {
             />
           </Link>
         </div>
-
         {/* Navigation Links (Visible only on larger screens) */}
         <ul className="hidden justify-end gap-16 text-gray-800 md:flex">
           {links.map((link) => {
@@ -82,7 +80,7 @@ const TopNav = () => {
                       },
                     )}
                   >
-                    <ul className="px-4 py-4 text-sm text-gray-700 dark:text-gray-200">
+                    <ul className="justify-center px-4 py-4 text-sm text-gray-700 dark:text-gray-200">
                       {link.subLinks.map((subLink, index) => (
                         <li key={index}>
                           <Link
@@ -100,9 +98,18 @@ const TopNav = () => {
             );
           })}
         </ul>
-
         {/* Empty placeholder to align logo and links */}
-        <div></div>
+        <div className="justify-end flex p-0 m-0">
+          <Link href="https://www.juit.ac.in/">
+            <Image
+              src="/juit.png" // Replace with your logo path
+              alt="JUIT Logo"
+              width={112} // Increased size
+              height={112} // Increased size
+              className="object-contain"
+            />
+          </Link>
+        </div>{" "}
       </div>
 
       {/* Hamburger Menu Links (Visible only on small screens) */}

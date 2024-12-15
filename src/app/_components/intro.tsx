@@ -11,13 +11,13 @@ const Intro = () => {
 
         <div className="flex justify-start items-start h-[30vh]">
           <div className="p-16 mt-56 ms-1/3 text-left mr-16">
-            <h1 className="text-7xl font-bold text-black">
-              Beyond Bits
+            <h1 className="text-5xl font-bold text-black">
+              Neuromorphic Interdisciplinary Cyber Physical Centre
             </h1>
             <h2
               className="text-2xl font-normal mt-4 text-black"
             >
-              JUIT Solan - IoT and Robotics
+            A centre of excellence at Jaypee University of Information Technology, Waknaghat
             </h2>
 
             {/* Dynamic Array */}
