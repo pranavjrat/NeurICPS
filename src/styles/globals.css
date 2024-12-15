@@ -6,6 +6,19 @@
 	box-sizing: border-box;
 }
 
+@media screen and (max-width: 750px) {
+  .menu-btn {
+    display: block; /* Show the hamburger menu */
+  }
+  .link-list {
+    display: none; /* Hide links on mobile */
+  }
+  .link-list.open {
+    display: block; /* Show links when the menu is open */
+  }
+}
+
+
 .gallery{
 	font-family: Lato, sans-serif;
 	margin: 0;

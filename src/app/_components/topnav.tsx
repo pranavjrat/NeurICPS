@@ -10,6 +10,9 @@ import clsx from 'clsx';
 const TopNav = () => {
   const pathname = usePathname();
   const [hoveredLink, setHoveredLink] = useState<string | null>(null); // Specify type explicitly
+  const [menuOpen, setMenuOpen] = useState(false); // State to track mobile menu visibility
+
+  const toggleMenu = () => setMenuOpen(!menuOpen); // Toggle mobile menu
 
   return (
     <nav className="bg-white shadow fixed w-full top-0 left-0 z-50">
@@ -27,8 +30,21 @@ const TopNav = () => {
           </Link>
         </div>
 
+        {/* Hamburger Menu for Mobile */}
+        <button
+          onClick={toggleMenu}
+          className="lg:hidden text-gray-800 hover:text-blue-600"
+        >
+          <i className="ri-menu-line menu-icon"></i> {/* You can use a proper icon library */}
+        </button>
+
         {/* Navigation Links */}
-        <ul className="flex justify-center text-gray-800 gap-16">
+        <ul
+          className={clsx(
+            'lg:flex justify-center text-gray-800 gap-16',
+            { 'flex flex-col items-center gap-4': menuOpen, 'hidden': !menuOpen }
+          )}
+        >
           {links.map((link) => {
             const isActive = pathname === link.href || pathname.includes(link.href);
 

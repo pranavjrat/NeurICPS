@@ -5,12 +5,13 @@ type ImageType = {
   src: string;
   alt: string;
   caption: string;
+  route: string; // Add route property
 };
 
 type GenericSectionProps = {
   heading: string;
   subHeading?: string;
-  description: string;
+  description: React.ReactNode;
   images: ImageType[]; // Add an images array to props
 };
 
@@ -21,7 +22,7 @@ export default function GenericSection({
   images, // Destructure images
 }: GenericSectionProps) {
   return (
-    <div className="mt-36 mb-36 flex flex-col md:flex-row mx-20 max-w-full">
+    <div className="mt-28 mb-11 flex flex-col md:flex-row mx-20 max-w-full">
       {/* Left Section */}
       <div className="md:w-1/2 flex flex-col justify-center">
         <h2 className="text-3xl font-medium capitalize mb-11 text-blue-600 text-left">
@@ -34,10 +35,10 @@ export default function GenericSection({
       </div>
 
       {/* Right Section (Image Gallery) */}
-      <ul className="mx-1 md:w-1/2 grid grid-cols-2 gap-4 ml-4">
+      <ul className="mt-36 mx-1 md:w-1/2 grid grid-cols-2 gap-4 ml-4">
         {images.map((image, index) => (
           <li key={index} className="relative">
-            <a href="#" className="block">
+            <a href={image.route} className="block">
               <figure className="text-center">
                 <Image
                   src={image.src}
@@ -46,7 +47,7 @@ export default function GenericSection({
                   height={300}
                   className="w-full h-auto object-cover rounded-lg"
                 />
-                <figcaption className="text-sm mt-2 text-gray-600">
+                <figcaption className="text-lg mt-2 text-white">
                   {image.caption}
                 </figcaption>
               </figure>
