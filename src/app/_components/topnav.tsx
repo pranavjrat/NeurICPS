@@ -1,86 +1,93 @@
-'use client';
+"use client";
 
-import { links } from 'lib/data';
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useState } from 'react';
-import { usePathname } from 'next/navigation';
-import clsx from 'clsx';
+import { links } from "lib/data";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 const TopNav = () => {
   const pathname = usePathname();
-  const [hoveredLink, setHoveredLink] = useState<string | null>(null); // Specify type explicitly
-  const [menuOpen, setMenuOpen] = useState(false); // State to track mobile menu visibility
-
-  const toggleMenu = () => setMenuOpen(!menuOpen); // Toggle mobile menu
+  const [hoveredLink, setHoveredLink] = useState<string | null>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage hamburger menu
 
   return (
-    <nav className="bg-white shadow fixed w-full top-0 left-0 z-50">
+    <nav className="fixed left-0 top-0 z-50 w-full bg-white shadow">
       <div className="mx-auto grid max-w-screen-lg grid-cols-3 items-center p-4">
-        {/* Logo on the left */}
-        <div className="flex justify-start p-0 m-0">
+        {/* Hamburger Menu (Visible only on small screens) */}
+        <div className="flex justify-start md:hidden">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="text-gray-800 focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+
+        {/* Logo on the center */}
+        <div className="m-0 flex justify-left p-0">
           <Link href="/">
             <Image
               src="/nicps.jpg" // Replace with your logo path
               alt="Logo"
-              width={56}  // Width in pixels
-              height={56} // Height in pixels
+              width={56}
+              height={56}
               className="object-contain"
             />
           </Link>
         </div>
 
-        {/* Hamburger Menu for Mobile */}
-        <button
-          onClick={toggleMenu}
-          className="lg:hidden text-gray-800 hover:text-blue-600"
-        >
-          <i className="ri-menu-line menu-icon"></i> {/* You can use a proper icon library */}
-        </button>
-
-        {/* Navigation Links */}
-        <ul
-          className={clsx(
-            'lg:flex justify-center text-gray-800 gap-16',
-            { 'flex flex-col items-center gap-4': menuOpen, 'hidden': !menuOpen }
-          )}
-        >
+        {/* Navigation Links (Visible only on larger screens) */}
+        <ul className="hidden justify-end gap-16 text-gray-800 md:flex">
           {links.map((link) => {
-            const isActive = pathname === link.href || pathname.includes(link.href);
+            const isActive =
+              pathname === link.href || pathname.includes(link.href);
 
             return (
               <li
                 key={link.href}
                 className={clsx(
-                  'group relative hover:text-blue-600 h-3/4 flex items-center justify-center whitespace-nowrap',
+                  "group relative flex h-3/4 items-center justify-center whitespace-nowrap hover:text-blue-600",
                   {
-                    'text-blue-600': isActive,
-                  }
+                    "text-blue-600": isActive,
+                  },
                 )}
-                onMouseEnter={() => setHoveredLink(link.href)}  // Track which link is hovered
-                onMouseLeave={() => setHoveredLink(null)}  // Reset hover state
+                onMouseEnter={() => setHoveredLink(link.href)}
+                onMouseLeave={() => setHoveredLink(null)}
               >
-                <Link href={link.href}>
-                  {link.name}
-                </Link>
+                <Link href={link.href}>{link.name}</Link>
 
                 {/* Dropdown Menu */}
                 {link.subLinks && (
                   <div
                     className={clsx(
-                      'absolute left-0 top-full mt-2 w-64 bg-white shadow-md rounded-lg z-10', // Increased width to w-64
+                      "absolute left-0 top-full z-10 mt-2 w-64 rounded-lg bg-white shadow-md",
                       {
-                        'block': hoveredLink === link.href, // Show dropdown when hovered
-                        'hidden': hoveredLink !== link.href, // Hide dropdown otherwise
-                      }
+                        block: hoveredLink === link.href,
+                        hidden: hoveredLink !== link.href,
+                      },
                     )}
                   >
-                    <ul className="py-4 px-4 text-sm text-gray-700 dark:text-gray-200"> {/* Increased padding */}
+                    <ul className="px-4 py-4 text-sm text-gray-700 dark:text-gray-200">
                       {link.subLinks.map((subLink, index) => (
                         <li key={index}>
                           <Link
                             href={subLink.href}
-                            className="block py-3 px-6 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                            className="block px-6 py-3 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                           >
                             {subLink.name}
                           </Link>
@@ -97,9 +104,41 @@ const TopNav = () => {
         {/* Empty placeholder to align logo and links */}
         <div></div>
       </div>
+
+      {/* Hamburger Menu Links (Visible only on small screens) */}
+      {isMenuOpen && (
+        <div className="absolute left-0 top-16 z-20 w-64 rounded-lg bg-white shadow-md md:hidden">
+          <ul className="px-4 py-4 text-sm text-gray-700">
+            {links.map((link) => (
+              <li key={link.href} className="py-2">
+                <Link
+                  href={link.href}
+                  className="block text-gray-700 hover:bg-gray-100"
+                >
+                  {link.name}
+                </Link>
+                {/* Sub Links */}
+                {link.subLinks && (
+                  <ul className="pl-4">
+                    {link.subLinks.map((subLink, index) => (
+                      <li key={index}>
+                        <Link
+                          href={subLink.href}
+                          className="block py-2 text-gray-600 hover:bg-gray-100"
+                        >
+                          {subLink.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
 
 export default TopNav;
-

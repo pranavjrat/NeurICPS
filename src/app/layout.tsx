@@ -1,8 +1,6 @@
 import "~/styles/globals.css";
-
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
-
 import { TRPCReactProvider } from "~/trpc/react";
 import TopNav from "./_components/topnav";
 import Footer from "./_components/footer";
@@ -18,7 +16,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body className="m-0 p-0 bg-gray-50">
+      <body className="m-0 p-0 bg-gray-50 overflow-x-hidden">
         <TopNav />
         <TRPCReactProvider>{children}</TRPCReactProvider>
         <Footer />
@@ -26,3 +24,4 @@ export default function RootLayout({
     </html>
   );
 }
+

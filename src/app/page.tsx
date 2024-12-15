@@ -13,7 +13,6 @@ export default async function Home() {
   return (
     <div>
       <Intro />
-      <About />
       <GenericSection
         heading="Ideas emerge here"
         subHeading="Activities"
@@ -30,8 +29,9 @@ export default async function Home() {
         }
         images={images} // Pass the images array here
       />
-      <Team />
       <Application />
+      <About />
+      <Team />
     </div>
   );
 }

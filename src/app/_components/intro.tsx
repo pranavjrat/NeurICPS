@@ -10,12 +10,12 @@ const Intro = () => {
       >
 
         <div className="flex justify-start items-start h-[30vh]">
-          <div className="mt-56 ms-40 text-left mr-16">
-            <h1 className="text-7xl font-bold text-gray-800">
+          <div className="p-16 mt-56 ms-1/3 text-left mr-16">
+            <h1 className="text-7xl font-bold text-black">
               Beyond Bits
             </h1>
             <h2
-              className="text-2xl font-light mt-4 text-black"
+              className="text-2xl font-normal mt-4 text-black"
             >
               JUIT Solan - IoT and Robotics
             </h2>

@@ -1,46 +1,46 @@
-import React from "react";
-import SectionHeading from "./section-heading";
-import Image from "next/image";
-import { pamphlets } from "lib/data";
+import React from 'react';
+import Image from 'next/image';
+import { pamphlets } from 'lib/data';
+import SectionHeading from './section-heading';
 
 const Application = () => {
   return (
-    <div className="mx-36 gap-11">
+    <div className="mx-8 md:mx-12 lg:mx-16 flex flex-col md:flex-row gap-8 py-12">
       {/* Text Section */}
-      <div className="mb-8">
-        <SectionHeading>Application Verticals</SectionHeading>
-        <p className="text-lg text-gray-700">
-          Empowering Innovation Across Agriculture, Smart Education, Security,
-          Healthcare, and IIoT. These verticals underscore how technology can
-          drive sustainable growth, operational efficiency, and societal
-          betterment in diverse fields. Each domain benefits from cutting-edge
-          research and development, making innovation accessible and impactful.
+      <div className="md:w-1/2 flex flex-col justify-center">
+        <SectionHeading className="text-center md:text-left mb-6">Application Verticals</SectionHeading>
+        <p className="text-gray-700 text-lg leading-relaxed md:text-left text-left mx-auto max-w-prose">
+          Empowering Innovation Across Agriculture, Smart Education, Security, Healthcare, and IIoT. These verticals
+          underscore how technology can drive sustainable growth, operational efficiency, and societal betterment in
+          diverse fields. Each domain benefits from cutting-edge research and development, making innovation accessible
+          and impactful.
         </p>
       </div>
 
       {/* Pamphlet Section */}
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="smol-aspect-ratio-gallery smol-flexbox-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:w-1/2">
         {pamphlets.map((pamphlet, index) => (
-          <div
+          <li
             key={index}
-            className="rounded-lg border bg-white p-6 text-center shadow-lg hover:shadow-xl"
+            className="rounded-lg border bg-white p-4 sm:p-5 text-center shadow-md transition-shadow duration-300 hover:shadow-lg"
           >
-            <Image
-              src={pamphlet.image}
-              alt={pamphlet.title}
-              width={80} // Reduced the width
-              height={80} // Reduced the height
-              className="mb-4 object-contain" // Ensure proper scaling without distortion
-            />
-            <h3 className="text-xl font-semibold text-gray-800">
-              {pamphlet.title}
-            </h3>
-            <p className="text-gray-600">{pamphlet.description}</p>
-          </div>
+            <div className="smol-aspect-ratio-gallery-item">
+              <Image
+                src={pamphlet.image}
+                alt={pamphlet.title}
+                width={350}
+                height={350}
+                className="mb-4 mx-auto object-cover rounded-md"
+              />
+            </div>
+            <h3 className="text-sm sm:text-base font-semibold text-gray-800">{pamphlet.title}</h3>
+            <p className="text-xs sm:text-sm text-gray-600">{pamphlet.description}</p>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };
 
 export default Application;
+
