@@ -5,7 +5,7 @@ import SectionHeading from './section-heading';
 
 const Application = () => {
   return (
-    <div className="mx-8 md:mx-12 lg:mx-16 flex flex-col md:flex-row gap-8 py-12">
+    <div className="mx-8 my-36 md:mx-12 lg:mx-16 flex flex-col md:flex-row gap-8 py-12">
       {/* Text Section */}
       <div className="md:w-1/2 flex flex-col justify-center">
         <SectionHeading>Application Verticals</SectionHeading>
@@ -24,7 +24,7 @@ const Application = () => {
             key={index}
             className="rounded-lg border bg-white p-4 sm:p-5 text-center shadow-md transition-shadow duration-300 hover:shadow-lg"
           >
-            <div className="smol-aspect-ratio-gallery-item">
+            <div className="mx-20 smol-aspect-ratio-gallery-it">
               <Image
                 src={pamphlet.image}
                 alt={pamphlet.title}

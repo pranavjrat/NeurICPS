@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="mx-auto my-16 scroll-mt-28 text-lg px-4 md:mx-11 md:my-32 md:text-xl bg-gray-50 rounded-lg shadow-lg"
+      className="mx-auto scroll-mt-28 text-lg px-4 md:mx-11 bg-gray-50 rounded-lg shadow-lg"
     >
       {/* Section Heading */}
       <div className="flex flex-col gap-8 md:flex-row md:gap-16">
@@ -78,4 +78,3 @@ export default function About() {
     </section>
   );
 }
-
