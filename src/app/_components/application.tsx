@@ -8,7 +8,7 @@ const Application = () => {
     <div className="mx-8 md:mx-12 lg:mx-16 flex flex-col md:flex-row gap-8 py-12">
       {/* Text Section */}
       <div className="md:w-1/2 flex flex-col justify-center">
-        <SectionHeading className="text-center md:text-left mb-6">Application Verticals</SectionHeading>
+        <SectionHeading>Application Verticals</SectionHeading>
         <p className="text-gray-700 text-lg leading-relaxed md:text-left text-left mx-auto max-w-prose">
           Empowering Innovation Across Agriculture, Smart Education, Security, Healthcare, and IIoT. These verticals
           underscore how technology can drive sustainable growth, operational efficiency, and societal betterment in

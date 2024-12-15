@@ -28,7 +28,7 @@ const About = () => {
       </div>
 
       {/* Second Heading: Details of Sensors */}
-      <h2 className="mt-36 text-3xl font-semibold text-blue-600 mt-12 mb-6 text-center md:text-left">Details of Sensors</h2>
+      <h2 className="mt-36 text-3xl font-semibold text-blue-600 mb-6 text-center md:text-left">Details of Sensors</h2>
       <div className="overflow-x-auto shadow-md rounded-lg">
         <table className="min-w-full table-auto border-collapse border border-gray-300 text-left">
           <thead className="bg-blue-200">
