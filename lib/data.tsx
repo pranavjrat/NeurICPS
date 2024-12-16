@@ -11,7 +11,7 @@ export const links = [
     name: "About Us",
     href: "/about",
     subLinks: [
-      { name: "Governing Council", href: "/about/governing-council" },
+      { name: "Governing Council", href: "/#about" },
       { name: "Venue", href: "/about/venue" },
       { name: "Awards", href: "/about/awards" },
     ],

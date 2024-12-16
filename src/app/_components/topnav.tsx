@@ -43,8 +43,8 @@ const TopNav = () => {
             <Image
               src="/nicps.jpg" // Replace with your logo path
               alt="Logo"
-              width={56}
-              height={56}
+              width={112}
+              height={112}
               className="object-contain"
             />
           </Link>
@@ -103,8 +103,8 @@ const TopNav = () => {
             <Image
               src="/juit.png" // Replace with your logo path
               alt="JUIT Logo"
-              width={224} // Increased size
-              height={224} // Increased size
+              width={448} // Increased size
+              height={448} // Increased size
               className="object-contain"
             />
           </Link>

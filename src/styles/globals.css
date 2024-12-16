@@ -232,7 +232,7 @@ transitions
 .navbar {
   display: flex;
   align-items: center; /* Center items vertically */
-  height: 100px; /* Fixed height */
+  height: 150px; /* Fixed height */
   padding: 0 20px; /* Add horizontal padding */
 }
 
