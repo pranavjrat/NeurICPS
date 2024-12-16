@@ -28,15 +28,17 @@ export default function Team() {
             key={index}
             className="flex flex-col items-center rounded-lg bg-gray-100 p-4 shadow-md transition-transform duration-300 hover:scale-105"
           >
-            {/* Image */}
-            <div className="relative h-32 w-32 sm:h-40 sm:w-40 md:h-28 md:w-28">
-              <Image
-                src={member.image}
-                alt={member.name}
-                layout="fill"
-                className="rounded-full object-cover"
-              />
-            </div>
+            {/* Image with Link */}
+            <a href={member.link} target="_blank" rel="noopener noreferrer">
+              <div className="relative h-32 w-32 sm:h-40 sm:w-40 md:h-28 md:w-28">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  layout="fill"
+                  className="rounded-full object-cover"
+                />
+              </div>
+            </a>
 
             {/* Name and Designation */}
             <h3 className="mt-4 text-base font-semibold text-gray-800 sm:text-lg">
@@ -60,15 +62,17 @@ export default function Team() {
             key={index}
             className="flex flex-col items-center rounded-lg bg-gray-100 p-4 shadow-md transition-transform duration-300 hover:scale-105"
           >
-            {/* Image */}
-            <div className="relative h-32 w-32 sm:h-40 sm:w-40 md:h-28 md:w-28">
-              <Image
-                src={member.image}
-                alt={member.name}
-                layout="fill"
-                className="rounded-full object-cover"
-              />
-            </div>
+            {/* Image with Link */}
+            <a href={member.link} target="_blank" rel="noopener noreferrer">
+              <div className="relative h-32 w-32 sm:h-40 sm:w-40 md:h-28 md:w-28">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  layout="fill"
+                  className="rounded-full object-cover"
+                />
+              </div>
+            </a>
 
             {/* Name and Designation */}
             <h3 className="mt-4 text-base font-semibold text-gray-800 sm:text-lg">
@@ -83,3 +87,4 @@ export default function Team() {
     </div>
   );
 }
+

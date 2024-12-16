@@ -189,7 +189,7 @@ export const teamMembersExternal = [
     name: "Dr. Prashant S Rana",
     designation: "Thapar Institute of Engg & Tech, Patiala",
     image: "/prashant-rana.png",
-    link: "https://www.linkedin.com/in/dr-prashant-rana-2838422b9",
+    link: "https://scholar.google.co.in/citations?user=MNj1Dw4AAAAJ",
   },
   {
     name: "Prof. Arpan Kumar Kar",
