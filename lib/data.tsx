@@ -41,9 +41,10 @@ export const links = [
     name: "Achievements",
     href: "/achievements",
     subLinks: [
-      { name: "Publications", href: "/achievements/publications" },
+      { name: "Publications", href: "/achievements" },
       { name: "Projects", href: "/achievements/projects" },
       { name: "Patents", href: "/achievements/patents" },
+      { name: "PhD", href: "/achievements/phd" },
     ],
   },
 ];
@@ -127,7 +128,8 @@ export const teamMembers = [
     name: "Dr. Ruchi Verma",
     designation: "Internal Member",
     image: "/ruchiverma.jpg",
-    link: "https://www.linkedin.com/in/ruchi-verma-682b71175/", },
+    link: "https://www.linkedin.com/in/ruchi-verma-682b71175/",
+  },
   {
     name: "Dr. Vikas Baghel",
     designation: "Internal Member",
@@ -203,7 +205,6 @@ export const teamMembersExternal = [
     image: "/dheeraj-chahal.jpg",
     link: "https://www.linkedin.com/in/dheeraj-chahal-phd-72291123",
   },
-
 ];
 
 export const externalMembers = [
@@ -290,4 +291,225 @@ export const sensors = [
   { modelName: "Soil Moisture Detection Humidity Sensor Module" },
   { modelName: "Raindrops Detection Sensor Module Snow Rain Weather" },
   { modelName: "3pin Photosensitive Sensor Module Light-Dependent Control" },
+];
+
+export const publications = [
+  {
+    authors: "Amit Kumar, Bhupendra Kr Pathak, Kaustubh Mishra, Rajiv Kumar",
+    year: "2024",
+    title: "Driver Drowsiness Detection System",
+    journal: "I. J. Engineering and Manufacturing, 14 (4), 26-36",
+  },
+  {
+    authors: "Pankaj Thakur, Shubham Goel, Emjee Puthooran",
+    year: "2024",
+    title: "Edge AI Enabled IoT Framework for Secure Smart Home Infrastructure",
+    journal: "Procedia Computer Science, 235 (2024), 3369-3378",
+  },
+  {
+    authors: "Naresh Rana, Tanishk Thakur, Shruti Jain",
+    year: "2024",
+    title:
+      "Smart Seizure Detection System: Machine Learning Based Model in Healthcare IoT",
+    journal: "Current Aging Science, 17",
+  },
+  {
+    authors:
+      "Geetanjali Rathee, Farhan Ahmad, Naveen Jaglan, Charalambos Konstantinou",
+    year: "2023",
+    title:
+      "A Secure and Trusted Mechanism for Industrial IoT Network Using Blockchain",
+    journal: "IEEE Transactions on Industrial Informatics, 19 (2), 1894-1902",
+  },
+  {
+    authors: "Shweta Pandit, Alok Kumar, Prabhat Thakur, G. Singh",
+    year: "2022",
+    title:
+      "SEE-MAC: Spectrum and Energy Efficient-Medium Access Control Protocol for Internet of Things",
+    journal: "International Journal of Communication Systems, 35 (15), 1-28",
+  },
+  {
+    authors: "Thakur, Payal, and Vivek Kumar Sehgal",
+    year: "2021",
+    title:
+      "Emerging architecture for heterogeneous smart cyber-physical systems for industry 5.0",
+    journal: "Computers & Industrial Engineering 162 (2021): 107750",
+  },
+  {
+    authors:
+      "Dey, Bhawna, Parthh Dikshit, Samridhi Sehgal, Vasuda Trehan, and Vivek Kumar Sehgal",
+    year: "2022",
+    title:
+      "Intelligent solutions for earthquake data analysis and prediction for future smart cities",
+    journal: "Computers & Industrial Engineering 170 (2022): 108368",
+  },
+  {
+    authors: "Thakur, Payal, and Vivek Kumar Sehgal",
+    year: "2024",
+    title:
+      "Synergizing edge computing and blockchain for cyber‐physical systems",
+    journal:
+      "Concurrency and Computation: Practice and Experience 36, no. 12 (2024): e8066",
+  },
+  {
+    authors: "Thakur, Payal, and Vivek Kumar Sehgal",
+    year: "2022",
+    title:
+      "Temperature Management Using Smart Thermostat in Cyber Physical Systems",
+    journal: "2022 IEEE Delhi Section Conference (DELCON), pp. 1-5. IEEE",
+  },
+  {
+    authors: "Thakur, Payal, and Vivek Kumar Sehgal",
+    year: "2022",
+    title:
+      "A framework for IoT based on Blockchain and Edge Computing in Cyber Physical Systems",
+    journal:
+      "2022 IEEE 19th India Council International Conference (INDICON), pp. 1-6. IEEE",
+  },
+  {
+    authors: "Garima Thakur, Harsh Sohal, Shruti Jain",
+    year: "2022",
+    title: "Low-power Approximate Arithmetic Circuits for IoT devices",
+    journal:
+      "Recent Advances in Electrical and Electronic Engineering, 15 (5), 421-428",
+  },
+  {
+    authors:
+      "Sudip Paul, Shruti Jain, Bikram Majhi, Karobi Pegu, Vinayak Majhi",
+    year: "2022",
+    title: "A Non-Invasive IoT-Based Glucose Level Monitoring System",
+    journal: "Current Signal Transduction Therapy, 17 (2022), 1-10",
+  },
+  {
+    authors: "Himani Bhardwaj, Shruti Jain, Harsh Sohal",
+    year: "2022",
+    title:
+      "Power Optimization using Current-mode signaling technique for IoT Applications",
+    journal: "Measurement: Sensors, 24 (2022), 1-10",
+  },
+  {
+    authors:
+      "Geetanjali Rathee, A Sharma, R Iqbal, M Aloqaily, Naveen Jaglan, Rajiv Kumar",
+    year: "2019",
+    title:
+      "A Blockchain Framework for Securing Connected and Autonomous Vehicles",
+    journal: "Sensors, 19 (14), 1-12",
+  },
+];
+
+export const patents = [
+  {
+    title:
+      "Smart Mobile Cover System With AI-Driven Safety Features and Real-Time Protective Mechanisms",
+    authors: "Pardeep Garg et al.",
+    patent_number: "202411059294",
+    date: "23-08-2024",
+  },
+  {
+    title:
+      "Autonomous Firefighting Robot System with Dynamic Sensor Fusion and AI-Enhanced Navigation",
+    authors: "Vikas Baghel et al.",
+    patent_number: "202411045083",
+    date: "28-06-2024",
+  },
+  {
+    title:
+      "Integrative Water Quality Monitoring System: IoT Sensors, ML Analysis, and LLM Guidance for Real-Time Potability Assessment and Sustainable Water Management",
+    authors: "Shruti Jain et al.",
+    patent_number: "202411005596",
+    date: "09-02-2024",
+  },
+  {
+    title:
+      "Real-time automated recognition and classification of Indian Arts and Paintings using AI and Deep Learning",
+    authors: "Pardeep Garg et al.",
+    patent_number: "202311061868",
+    date: "15-12-2023",
+  },
+  {
+    title:
+      "Real-Time Monitoring and Identification System for Diabetic Retinopathy with Remote Consultation Capability",
+    authors: "Shruti Jain et al.",
+    patent_number: "202311041412",
+    date: "19-06-2023",
+  },
+  {
+    title: "An IoT-Based Automated DIY Drip Irrigation And Pest Control",
+    authors: "Shruti Jain et al.",
+    patent_number: "202311008596",
+    date: "17-02-2023",
+  },
+  {
+    title: "Shoes",
+    authors: "Nishant Jain et al.",
+    patent_number: "378538-001",
+    date: "03-02-2023",
+  },
+  {
+    title:
+      "Internet of Things (IoT) based infrared health monitoring system for newborn babies",
+    authors: "Vivek Sehgal et al.",
+    patent_number: "202205",
+    date: "04-06-2022",
+  },
+  {
+    title: "Artificial Intelligence and Voice Based Patients Monitoring System",
+    authors: "Shruti Jain et al.",
+    patent_number: "202041048080",
+    date: "13-11-2020",
+  },
+  {
+    title:
+      "An Artificial Intelligence Based System to Identity the Medical Condition Prior To Doctor Consultation",
+    authors: "Aman Sharma et al.",
+    patent_number: "2020103509",
+    date: "18-11-2020",
+  },
+];
+
+export const projects = [
+  {
+    title: "Heartbeat On The Go: The Portable ECG Machine",
+    authors: "Himanshi Sood (201006), Mokshika (201014)",
+  },
+  {
+    title: "Security Lock Automation System using Telegram",
+    authors: "Manav Modi (201009), Varidhi (2015440)",
+  },
+  {
+    title: "IoT based Automated Quality Assessment for Fruits",
+    authors: "Ayush Gupta (211007), Adrita Kar (211069)",
+  },
+  {
+    title: "Aerial Surveillance Security System",
+    authors: "Harshit Thakur (191001), Saksham Gupta (191005)",
+  },
+  {
+    title: "Smart Wheelchair Component System",
+    authors: "Ripunjay Singh Jandrotia (191017), Kartik Katoch (191020)",
+  },
+  {
+    title: "Traffic Sign Recognition System for Autonomous Vehicle",
+    authors: "Saanidhya Yadav (191008), Saransh Rohilla (191023)",
+  },
+  {
+    title: "Accidental Prevention System",
+    authors: "Abhishek (191013), Vimal Bhatia (191019)",
+  },
+  {
+    title: "IoT based Smart Agricultural Automation",
+    authors: "Devansh Gupta (191038), Sanskriti Choudhary (191040)",
+  },
+  {
+    title: "Disease Detection Using IoT From Urine",
+    authors: "Shreyansh Shrivastava (191044), Prajjwal Shukla (191048)",
+  },
+  {
+    title: "IoT Based Bot for Military Applications",
+    authors: "Aditya Kumar Jaiswal (181007), Avinash Verma (181019)",
+  },
+  {
+    title: "IoT Social Distancing and Monitoring Robot For Queue",
+    authors: "Surbhi Kumari (181010), Kirti Parshionikar (181024)",
+  },
 ];

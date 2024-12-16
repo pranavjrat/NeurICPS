@@ -50,7 +50,7 @@ export default function About() {
             transition={{ duration: 0.8, ease: "easeOut" }} // Transition details
           >
             <Image
-              src="/juits.png" // Replace with your image path
+              src="/juit.jpg" // Replace with your image path
               alt="Our Vision"
               layout="responsive"
               width={1920}

@@ -41,7 +41,7 @@ const TopNav = () => {
         <div className="justify-left m-0 flex p-0">
           <Link href="/">
             <Image
-              src="/nicps.jpg" // Replace with your logo path
+              src="/nicps.jpeg" // Replace with your logo path
               alt="Logo"
               width={112}
               height={112}
