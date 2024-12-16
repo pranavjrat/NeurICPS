@@ -52,25 +52,29 @@ export const links = [
 export const pamphlets: PamphletType[] = [
   {
     title: "Agriculture",
-    description: "Smart farming is the new buzzword in agriculture and IOT is the next frontier of progress.",
+    description:
+      "Smart farming is the new buzzword in agriculture and IOT is the next frontier of progress.",
     image: "/images/agriculture.png",
   },
   {
     title: "Smart Education",
-    description: "Today, internet and mobile technology has helped in elevating the scope and method of learning.",
+    description:
+      "Today, internet and mobile technology has helped in elevating the scope and method of learning.",
     image: "/images/edu.png",
   },
   {
     title: "Security",
-    description: "Security and surveillance capabilities are largely enhanced by IoT technology",
+    description:
+      "Security and surveillance capabilities are largely enhanced by IoT technology",
     image: "/images/sec.jpg",
   },
   {
     title: "Healthcare",
-    description: "IoT is rapidly changing the healthcare industry by introducing new dynamics to the interaction between devices and people.",
+    description:
+      "IoT is rapidly changing the healthcare industry by introducing new dynamics to the interaction between devices and people.",
     image: "/images/health.png",
   },
-   {
+  {
     title: "Industrial",
     description:
       "With robotics and artificial intelligence taking precedence in industrial infrastructure, IoT comes to the forefront of the next industrial revolution.",
@@ -105,7 +109,6 @@ export const images = [
   },
 ];
 
-
 // lib/messages.ts
 export const messages = [
   "To establish Cyber Physical Systems Hub, specially designed and created to focus in the fields of interdisciplinary research and teaching by integrating embedded systems, to realize and solve global grand engineering challenges.",
@@ -117,42 +120,90 @@ export const teamMembers = [
   {
     name: "Prof. Vivek Kumar Sehgal",
     designation: "Chairman",
-    image:
-      "/vksehgal.jpg",
+    image: "/vksehgal.jpg",
+    link: "https://www.linkedin.com/in/vivekkumarsehgal/",
   },
   {
     name: "Dr. Ruchi Verma",
     designation: "Internal Member",
-    image:
-      "/ruchiverma.jpg",
-  },
+    image: "/ruchiverma.jpg",
+    link: "https://www.linkedin.com/in/ruchi-verma-682b71175/", },
   {
     name: "Dr. Vikas Baghel",
     designation: "Internal Member",
-    image:
-      "/vikasbaghel.jpg",
+    image: "/vikasbaghel.jpg",
+    link: "https://scholar.google.co.in/citations?user=ScoGja0AAAAJ",
   },
   {
     name: "Dr. Tanmay Gupta",
     designation: "Internal Member",
-    image:
-      "/tanmay.jpg",
+    image: "/tanmay.jpg",
+    link: "https://www.linkedin.com/in/dr-tanmay-gupta-a4b79319",
   },
   {
-    "name": "Prof. Raj Bhatnagar",
-    "designation": "University of Cincinnati, USA",
-    "image": "/raj_bhatnagar.jpg"
+    name: "Dr. Aman Sharma",
+    designation: "Internal Member",
+    image: "/aman.jpg",
+    link: "https://www.linkedin.com/in/dr-aman-sharma-9186485b",
+  },
+];
+
+export const teamMembersExternal = [
+  {
+    name: "Prof. Raj Bhatnagar",
+    designation: "University of Cincinnati, USA",
+    image: "/raj_bhatnagar.jpg",
+    link: "https://www.linkedin.com/in/raj-bhatnagar-52546b4/",
   },
   {
-    "name": "Prof. Deepak Khazanchi",
-    "designation": "University of Nebraska, Omaha, USA",
-    "image": "/deepak_khazanchi.jpg"
+    name: "Prof. Deepak Khazanchi",
+    designation: "University of Nebraska, Omaha, USA",
+    image: "/deepak_khazanchi.jpg",
+    link: "https://www.linkedin.com/in/dkhazanchi/",
   },
   {
-    "name": "Prof. Sartaj Sahni",
-    "designation": "University of Florida, USA",
-    "image": "/sartaj_sahni.jpg"
-  }
+    name: "Prof. Sartaj Sahni",
+    designation: "University of Florida, USA",
+    image: "/sartaj_sahni.jpg",
+    link: "https://www.linkedin.com/in/sartaj-sahni-4b06ba17",
+  },
+  {
+    name: "Dr. Hemangee K. Kapoor",
+    designation: "IIT Guwahati",
+    image: "/drhemangee.jpg",
+    link: "https://in.linkedin.com/in/hemangee-kapoor-251240",
+  },
+  {
+    name: "Mr. Bharatkumar Sharma",
+    designation: "NVIDIA",
+    image: "/bharatkumar.jpg",
+    link: "https://in.linkedin.com/in/bharatkumar-sharma-a631755",
+  },
+  {
+    name: "Dr. Mohit Singhal",
+    designation: "Northeastern University",
+    image: "/mohit-singhal.jpg",
+    link: "https://www.linkedin.com/in/mohit-singhal-1202",
+  },
+  {
+    name: "Dr. Prashant S Rana",
+    designation: "Thapar Institute of Engg & Tech, Patiala",
+    image: "/prashant-rana.png",
+    link: "https://www.linkedin.com/in/dr-prashant-rana-2838422b9",
+  },
+  {
+    name: "Prof. Arpan Kumar Kar",
+    designation: "IIT Delhi",
+    image: "/arpan-kumar-kar.jpg",
+    link: "https://www.linkedin.com/in/arpankar",
+  },
+  {
+    name: "Dr. Dheeraj Chahal",
+    designation: "TCS",
+    image: "/dheeraj-chahal.jpg",
+    link: "https://www.linkedin.com/in/dheeraj-chahal-phd-72291123",
+  },
+
 ];
 
 export const externalMembers = [
@@ -167,26 +218,54 @@ export const activities = [
   { name: "Publications in ranked conferences" },
   { name: "Industrial consultancy " },
   { name: "Symposium / Industry 5.0 week technically sponsored by ACM/IEEE " },
-  { name: "Small startups (With Process Industries and Software Technology Parks of India" },
+  {
+    name: "Small startups (With Process Industries and Software Technology Parks of India",
+  },
   { name: "MTech. and Ph.D. with specialization in this field" },
   { name: "Periodical articles in international newsletters and magazines" },
-  { name: "Professional chapters ACM SIGBED and IEEE Industrial Electronics Society" },
+  {
+    name: "Professional chapters ACM SIGBED and IEEE Industrial Electronics Society",
+  },
   { name: "Workshops related to CPS-Industry 5.0" },
   { name: "Design of Smart Sensors" },
   { name: "Webinars" },
   { name: "FDPs" },
   { name: "MoU with industry and academia" },
-  { name: "Patents" }
+  { name: "Patents" },
 ];
 
 export const coreTech = [
-  { description: "Raspberry Pi 4 Model-B and Raspberry Pi 5 with 8 GB RAM", quantity: 5 },
-  { description: "Official USB Type-C 15.3 W Power Supply for Raspberry Pi-4 Black", quantity: 5 },
-  { description: "SanDisk Micro SD/SDHC 32GB Class 10 Memory Card", quantity: 5 },
-  { description: "7” Official Raspberry Pi Display with Capacitive Touch Screen", quantity: 5 },
-  { description: "Raspberry Pi4 Model Touch Screen 7 Inch Display Case-ABS, Red", quantity: 5 },
-  { description: "5MP Raspberry Pi ¾ Model B Camera Module Rev 1.3 with Cable", quantity: 5 },
-  { description: "SanDisk Micro SD Card/ Micro Storage Card 32GB", quantity: 9 },
+  {
+    description: "Raspberry Pi 4 Model-B and Raspberry Pi 5 with 8 GB RAM",
+    quantity: 5,
+  },
+  {
+    description:
+      "Official USB Type-C 15.3 W Power Supply for Raspberry Pi-4 Black",
+    quantity: 5,
+  },
+  {
+    description: "SanDisk Micro SD/SDHC 32GB Class 10 Memory Card",
+    quantity: 5,
+  },
+  {
+    description:
+      "7” Official Raspberry Pi Display with Capacitive Touch Screen",
+    quantity: 5,
+  },
+  {
+    description:
+      "Raspberry Pi4 Model Touch Screen 7 Inch Display Case-ABS, Red",
+    quantity: 5,
+  },
+  {
+    description: "5MP Raspberry Pi ¾ Model B Camera Module Rev 1.3 with Cable",
+    quantity: 5,
+  },
+  {
+    description: "SanDisk Micro SD Card/ Micro Storage Card 32GB",
+    quantity: 9,
+  },
   { description: "Waveshare 77 FOV Camera", quantity: 9 },
   { description: "AC8265 Wireless NIC for Jetson Nano", quantity: 9 },
   { description: "5V-4A Adapter for Jetson Nano Dev", quantity: 9 },
@@ -210,6 +289,5 @@ export const sensors = [
   { modelName: "HC-SR501 PIR Motion Sensor Module Green" },
   { modelName: "Soil Moisture Detection Humidity Sensor Module" },
   { modelName: "Raindrops Detection Sensor Module Snow Rain Weather" },
-  { modelName: "3pin Photosensitive Sensor Module Light-Dependent Control" }
+  { modelName: "3pin Photosensitive Sensor Module Light-Dependent Control" },
 ];
-
