@@ -50,10 +50,11 @@ export default function About() {
             transition={{ duration: 0.8, ease: "easeOut" }} // Transition details
           >
             <Image
-              src="https://www.juit.ac.in/galleryimages/1.jpg" // Replace with your image path
+              src="/juit.jpg" // Replace with your image path
               alt="Our Vision"
               layout="responsive"
-              fill
+              width={1920}
+              height={1080}
               className="rounded-lg object-cover shadow-lg"
             />
           </motion.div>

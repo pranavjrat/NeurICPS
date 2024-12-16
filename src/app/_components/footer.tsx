@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="relative block h-32 lg:col-span-2 lg:h-full">
         {/* Replace with the college logo */}
         <Image
-          src="/juit.jpg" // Replace with your logo path
+          src="/juit2.jpg" // Replace with your logo path
           alt="Logo"
           layout="fill"
           className="absolute inset-0 h-full w-full object-cover"
