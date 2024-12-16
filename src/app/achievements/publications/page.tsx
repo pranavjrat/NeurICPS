@@ -1,11 +1,11 @@
 import React from "react";
-import { patents } from "lib/data";
+import { publications } from "lib/data";
 
-function Patents() {
+function Publications() {
   return (
     <div className="mx-36 my-56">
       <h2 className="mb-8 text-center text-3xl font-semibold text-blue-600 md:text-left">
-        Details of Patents
+        Details of Papers
       </h2>
       <div className="overflow-x-auto rounded-lg shadow-md">
         <table className="min-w-full table-auto border-collapse border border-gray-300 text-left">
@@ -21,15 +21,15 @@ function Patents() {
                 Authors
               </th>
               <th className="border-b border-gray-300 px-6 py-3 text-lg font-medium text-gray-700">
-                Patent Number
+                Year
               </th>
               <th className="border-b border-gray-300 px-6 py-3 text-lg font-medium text-gray-700">
-                Date
+                Journal
               </th>
             </tr>
           </thead>
           <tbody>
-            {patents.map((patent, index) => (
+            {publications.map((paper, index) => (
               <tr
                 key={index}
                 className="transition duration-200 odd:bg-white even:bg-gray-50 hover:bg-gray-100"
@@ -38,16 +38,16 @@ function Patents() {
                   {index + 1}
                 </td>
                 <td className="border-b border-gray-300 px-6 py-4 text-sm text-gray-600">
-                  {patent.title}
+                  {paper.title}
                 </td>
                 <td className="border-b border-gray-300 px-6 py-4 text-sm text-gray-600">
-                  {patent.authors}
+                  {paper.authors}
                 </td>
                 <td className="border-b border-gray-300 px-6 py-4 text-sm text-gray-600">
-                  {patent.patent_number}
+                  {paper.year}
                 </td>
                 <td className="border-b border-gray-300 px-6 py-4 text-sm text-gray-600">
-                  {patent.date}
+                  {paper.journal}
                 </td>
               </tr>
             ))}
@@ -58,5 +58,5 @@ function Patents() {
   );
 }
 
-export default Patents;
+export default Publications;
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { projects } from "lib/data";
 
-function ProjectDetails() {
+function Projects() {
   return (
     <div className="mx-36 my-56">
       <h2 className="mb-8 text-center text-3xl font-semibold text-blue-600 md:text-left">
@@ -46,5 +46,5 @@ function ProjectDetails() {
   );
 }
 
-export default ProjectDetails;
+export default Projects;
 

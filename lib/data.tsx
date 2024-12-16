@@ -41,7 +41,7 @@ export const links = [
     name: "Achievements",
     href: "/achievements",
     subLinks: [
-      { name: "Publications", href: "/achievements" },
+      { name: "Publications", href: "/achievements/publications" },
       { name: "Projects", href: "/achievements/projects" },
       { name: "Patents", href: "/achievements/patents" },
       { name: "PhD", href: "/achievements/phd" },

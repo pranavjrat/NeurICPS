@@ -18,7 +18,7 @@ export default function About() {
           <h2 className="mb-6 text-center text-3xl font-semibold text-blue-600 md:text-4xl leading-tight">
             About Us
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-gray-700 md:text-xl mb-6 leading-relaxed">
+          <p className="text-sm sm:text-base text-gray-700 md:text-xl mb-6 leading-relaxed">
             The Neuromorphic Interdisciplinary Cyber Physical Centre at Jaypee University of Information Technology, Waknaghat, stands as a pioneering Centre of Excellence, dedicated to advancing transformative research and development in cyber-physical systems. With a strong focus on interdisciplinary collaboration, the Centre brings together visionary minds from academia, industry, and research communities to generate world-class ideas and convert them into tangible solutions. By leveraging cutting-edge technologies, state-of-the-art infrastructure, and strategic global partnerships, this Centre aims to spearhead innovation, foster technological breakthroughs, and address critical societal challenges through neuromorphic and cyber-physical advancements.
           </p>
 
@@ -50,7 +50,7 @@ export default function About() {
             transition={{ duration: 0.8, ease: "easeOut" }} // Transition details
           >
             <Image
-              src="/juit.jpg" // Replace with your image path
+              src="/juit2.jpg" // Replace with your image path
               alt="Our Vision"
               layout="responsive"
               width={1920}

@@ -256,3 +256,8 @@ transitions
   visibility: visible; /* Make dropdown visible when the hover state is active */
 }
 
+.wrapper{
+  display:grid;
+  height:100vh;
+  place-items:center
+}

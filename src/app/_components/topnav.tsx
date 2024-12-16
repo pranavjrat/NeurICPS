@@ -38,7 +38,7 @@ const TopNav = () => {
           </button>
         </div>
         {/* Logo on the center */}
-        <div className="justify-left m-0 flex p-0">
+        <div className="justify-start m-0 flex p-0">
           <Link href="/">
             <Image
               src="/nicps.jpeg" // Replace with your logo path
@@ -50,7 +50,7 @@ const TopNav = () => {
           </Link>
         </div>
         {/* Navigation Links (Visible only on larger screens) */}
-        <ul className="hidden justify-end gap-16 text-gray-800 md:flex">
+        <ul className="hidden justify-center gap-16 text-gray-800 md:flex">
           {links.map((link) => {
             const isActive =
               pathname === link.href || pathname.includes(link.href);
@@ -98,14 +98,14 @@ const TopNav = () => {
             );
           })}
         </ul>
-        <div className="m-0 flex justify-end p-0">
+        <div className="m-0 flex justify-end items-end p-0">
           <Link href="https://www.juit.ac.in/">
             <Image
               src="/juit.png" // Replace with your logo path
               alt="JUIT Logo"
               width={448} // Increased size
               height={448} // Increased size
-              className="object-contain"
+              className="object-contain ml-20"
             />
           </Link>
         </div>{" "}
