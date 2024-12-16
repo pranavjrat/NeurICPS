@@ -53,8 +53,7 @@ export default function About() {
               src="/juit2.jpg" // Replace with your image path
               alt="Our Vision"
               layout="responsive"
-              width={1920}
-              height={1080}
+              fill
               className="rounded-lg object-cover shadow-lg"
             />
           </motion.div>
