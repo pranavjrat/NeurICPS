@@ -513,3 +513,30 @@ export const projects = [
     authors: "Surbhi Kumari (181010), Kirti Parshionikar (181024)",
   },
 ];
+
+export const phdResearchData = {
+  heading: "PhD in Neuromorphic Computing for Intelligent Systems (CPIS)",
+  subHeading: "Payal Thakur - A Trailblazer in Neuromorphic Research",
+  description: (
+    <p>
+      Payal Thakur's PhD research in the field of Neuromorphic Computing focuses on the development of innovative computational models that simulate the human brain's neural network to improve artificial intelligence systems. Her work on Neuromorphic CPIS (Cognitive and Perceptive Intelligent Systems) aims to enhance the efficiency and learning capabilities of AI through biologically inspired systems, with potential applications in robotics, healthcare, and autonomous vehicles.
+      <br />
+      The research is groundbreaking in its potential to create more adaptive, intelligent, and energy-efficient systems.
+    </p>
+  ),
+  images: [
+    {
+      src: "/payal-thakur-photo1.jpg", // Replace with the actual image path
+      alt: "Payal Thakur's PhD Research",
+      caption: "PhD Research in Neuromorphic Computing",
+      route: "/research-details" // Replace with the actual route
+    },
+    {
+      src: "/neuromorphic-model.jpg", // Replace with the actual image path
+      alt: "Neuromorphic Model",
+      caption: "Neuromorphic Models and AI Systems",
+      route: "/neuromorphic-model" // Replace with the actual route
+    }
+  ]
+};
+
