@@ -22,10 +22,13 @@ export default function GenericSection({
   images,
 }: GenericSectionProps) {
   return (
-    <div className="mb-16 mt-28 flex flex-col-reverse items-center gap-12 px-6 md:px-16 md:mx-auto md:max-w-7xl md:flex-row bg-gradient-to-r from-black to-indigo-600 p-8 rounded-lg shadow-lg">
+    <div className="mb-16 mt-28 flex flex-col-reverse items-center gap-12 px-6 md:px-16 md:mx-auto md:max-w-7xl md:flex-row bg-gradient-to-r from-gray-700 to-gray-500 p-8 rounded-lg shadow-lg">
       {/* Right Section (Image Gallery) */}
       <ul className="order-2 grid w-full grid-cols-2 gap-6 md:order-1 md:w-1/2 md:gap-8">
-        <h2 className="mb-6 text-left text-3xl font-semibold capitalize text-white">
+        <h2
+          className="mb-6 text-left text-4xl font-semibold capitalize text-white"
+          style={{ textShadow: "2px 2px 4px black" }} // Add black shadow here
+        >
           {heading}
         </h2>
         {images.map((image, index) => (
@@ -39,7 +42,10 @@ export default function GenericSection({
                   height={300}
                   className="h-auto w-full rounded-lg object-cover shadow-md transition-shadow duration-300 ease-in-out group-hover:shadow-xl"
                 />
-                <figcaption className="mt-2 text-lg text-white opacity-80 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                <figcaption
+                  className="mt-2 text-lg text-white opacity-80 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+                  style={{ textShadow: "0px 1px 2px black" }} // Add black shadow here
+                >
                   {image.caption}
                 </figcaption>
               </figure>
@@ -51,13 +57,20 @@ export default function GenericSection({
       {/* Left Section */}
       <div className="order-1 flex w-full flex-col justify-center md:order-2 md:w-1/2">
         {subHeading && (
-          <h3 className="mb-4 text-xl font-semibold text-white md:text-2xl">
+          <h3
+            className="mb-4 text-xl font-semibold text-white md:text-2xl"
+            style={{ textShadow: "1px 1px 2px black" }} // Add black shadow here
+          >
             {subHeading}
           </h3>
         )}
-        <p className="text-base text-gray-100 md:text-lg">{description}</p>
+        <p
+          className="text-base text-gray-100 md:text-lg"
+          style={{ textShadow: "1px 1px 2px black" }} // Add black shadow here
+        >
+          {description}
+        </p>
       </div>
     </div>
   );
 }
-
