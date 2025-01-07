@@ -205,6 +205,12 @@ export const teamMembersExternal = [
     image: "/dheeraj-chahal.jpg",
     link: "https://www.linkedin.com/in/dheeraj-chahal-phd-72291123",
   },
+  {
+    name: "Dr. ApURBA Das",
+    designation: "TCS",
+    image: "/dr_apurba_das.jpg",
+    link: "https://www.linkedin.com/in/apurbadas1980/",
+  },
 ];
 
 export const externalMembers = [
