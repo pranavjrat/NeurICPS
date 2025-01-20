@@ -211,6 +211,12 @@ export const teamMembersExternal = [
     image: "/dr_apurba_das.jpg",
     link: "https://www.linkedin.com/in/apurbadas1980/",
   },
+  {
+    name: "Dr. Madhusudan Singh",
+    designation: "L&T Technology Services",
+    image: "/Madhusudan.jpeg",
+    link: "https://in.linkedin.com/in/drmadhusudansingh",
+  },
 ];
 
 export const externalMembers = [
